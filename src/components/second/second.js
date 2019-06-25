@@ -1,11 +1,13 @@
 import React,{Component} from 'react'
-import axios from 'axios'
 import Footer from '../common/footer'
-// import {connect} from 'react-redux';
-// import actions from './actionCreator'
- export default class Car extends Component {
+import {connect} from 'react-redux';
+import actionlist from './actionCreator'
+ class Second extends Component {
+	componentDidMount(){
+		this.props.getData();
+	  }
 		render(){
-			    console.log(this.props)
+			    console.log(this.props.list)
 				return <div>
 						second
 						<Footer/>
@@ -14,3 +16,18 @@ import Footer from '../common/footer'
 		       
 		   }
 }
+var mapState=(state)=>{
+	return {
+		list:state.second.joke_list
+	}
+}
+var mapDispatch=(dispatch)=>{
+	return {
+	
+		getData(){
+			dispatch(actionlist.getDataAction())
+		}
+	}
+}
+
+export default connect(mapState,mapDispatch)(Second);
