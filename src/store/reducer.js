@@ -1,10 +1,10 @@
 import {combineReducers} from 'redux';
 
-// import  listReducer from '../components/list/reducer'
-// import  carReducer from '../components/car/reducer'
+import  homeReducer from '../components/home/reducer'
+
 var reducer = combineReducers({
-	// list:listReducer,
-	// car:carReducer
+	home:homeReducer
+
 })
 
 export default reducer;
