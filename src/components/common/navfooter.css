@@ -1,0 +1,25 @@
+.navFooter{
+    height:1rem;
+    background:#fff;
+    width:100%;
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    display: flex;
+    justify-content: space-around;
+    text-align:center;
+    align-items: center;
+     z-index:2;
+}
+.navFooter a{
+    display:flex;
+    width:24%;
+    height:100%;
+    flex-direction: column;
+    justify-content:center;
+    color: #797d82;
+}
+.navFooter .active{
+   color: #ff5f16
+}
