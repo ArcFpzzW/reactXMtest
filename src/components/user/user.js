@@ -7,12 +7,48 @@ import './user.css'
 
 
  export default class Car extends Component {
+	constructor(props){
+		super(props);
+		this.state={
+			disFlag:false,
+			username:''
+		}
+        this.login= this.login.bind(this)
+	}
+	componentDidMount(){
+		if(sessionStorage.getItem("user")){
+			this.setState({
+				disFlag:sessionStorage.getItem("disFlag")
+			})
+		}
+		
+	}
 		goLuck(){
-			this.props.history.push("/luck")
+			if(sessionStorage.getItem("user")){
+				this.props.history.push("/luck")
+			}
+			
 		}
 		goThird(){
-			this.props.history.push("/third")
+			if(sessionStorage.getItem("user")){
+				this.props.history.push("/third")
+			}
+			
 		}
+		login(){
+			// console.log(this.props.url);
+			if(this.username.value!=="admin") alert("警告：您未正确的输入账号密码！！")
+			if(this.username.value==="admin" && this.password.value==="123"){
+				sessionStorage.setItem("user",this.username.value);
+				// this.props.history.push(this.props.url);
+				this.setState({
+					disFlag:!this.state.disFlag,
+					username:this.username.value
+				})
+				sessionStorage.setItem("disFlag",this.state.disFlag);
+				
+			}
+	   }
 		render(){
 			    console.log(this.props)
 				return <div>
@@ -22,10 +58,13 @@ import './user.css'
 									<p className="tit_Wb">很难说什么事办不到的事情，因为昨天的梦想可以使今天的希望，并且还可以成为明天的现实。</p>
 									<div>
 										<span className="Hp_Box"><img className="Nl_img" src='http://pic.51yuansu.com/pic3/cover/00/94/68/58dcd704b0803_610.jpg' alt="" /></span>
-										<div className="login_Box">
+										<div className="login_Box"  style={{display:this.state.disFlag?'none':'block'}}>
 											<p><span>账号：</span> <input type="text"  ref={(node)=>this.username=node} /></p>
 											<span>密码：</span> <input type="text" ref={(node)=>this.password=node}  />
 											<button onClick={this.login}  className="login_Btn">立即登录</button>
+										</div>
+										<div className="loginT" style={{display:this.state.disFlag?'block':'none'}}>
+											欢迎最贵的：<p>{this.state.username}</p>登录纸飞机！
 										</div>
 									</div>
 								</div>

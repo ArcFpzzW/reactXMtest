@@ -34,7 +34,7 @@ export default class Luck extends Component{
             </div>
                 <Route path="/luck/starts" component={Starts} />
                 <Route path="/luck/lucks" component={Lucks} />
-                {/* <Redirect from="/luck" to="/luck/starts" exact /> */}
+                <Redirect from="/luck" to="/luck/starts" exact />
         </div>
     }
 }
