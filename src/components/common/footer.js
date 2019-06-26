@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 
-import {BrowserRouter as Router,Route,Switch,NavLink } from 'react-router-dom'
+import {NavLink } from 'react-router-dom'
 import './navfooter.css'
  export default class navFooter extends Component {
 		render(){

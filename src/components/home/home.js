@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 import Footer from '../common/footer'
 import actionlist from './actionCreator'
 import Swiper from '../common/swiper'
-import {BrowserRouter as Router,NavLink } from 'react-router-dom'
 import './home.css'
   class Home extends Component {
 	  componentDidMount(){
