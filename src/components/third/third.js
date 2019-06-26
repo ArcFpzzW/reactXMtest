@@ -3,10 +3,34 @@ import Footer from '../common/footer'
 import {connect} from 'react-redux';
 import actions from './actionCreator'
 class Car extends Component {
+	constructor(props){
+		super(props);
+		this.state={
+			coleFlag:true
+			
+		}
+       this.getCollection = this.getCollection.bind(this)
+	}
+	componentDidMount(){
+		this.getCollection()
+		
+	}
+	getCollection(){
+		console.log(this.state.coleFlag)
+		if(sessionStorage.getItem("user")){
+			this.setState({
+				coleFlag:!this.state.coleFlag
+			})
+			console.log(this.state.coleFlag)
+		}
+	}
 	render(){
-			console.log(this.props)
-			return <div><ul>
-					  
+			// console.log(this.props)
+		
+			return <div>
+				<h3>您的收藏列表</h3>
+
+				<ul style={{display:this.state.coleFlag?'none':'block'}}>					  
 						{
 							this.props.list.map((item,index)=>{
 								return <li key={index} >
@@ -26,7 +50,10 @@ class Car extends Component {
 						}
 					  
 				   </ul>
-					
+					<div   style={{display:this.state.coleFlag?'block':'none'}}>
+						<h2>您的收藏列表空空如也！</h2>
+
+					</div>
 					   <Footer />
 				   </div>
 
