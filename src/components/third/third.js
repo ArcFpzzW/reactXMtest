@@ -42,7 +42,7 @@ class Car extends Component {
 										<span>{item.ct}</span>
 
 										<i className="fa fa-star-o"></i>
-										<button> 取消收藏</button>
+										<button > 取消收藏</button>
 									</div>
 
 								</li>

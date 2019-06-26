@@ -11,7 +11,7 @@ import './user.css'
 		super(props);
 		this.state={
 			disFlag:false,
-			username:''
+			usernameL:''
 		}
         this.login= this.login.bind(this)
 	}
@@ -43,7 +43,7 @@ import './user.css'
 				// this.props.history.push(this.props.url);
 				this.setState({
 					disFlag:!this.state.disFlag,
-					username:this.username.value
+					usernameL:this.username.value
 				})
 				sessionStorage.setItem("disFlag",this.state.disFlag);
 				
@@ -64,7 +64,7 @@ import './user.css'
 											<button onClick={this.login}  className="login_Btn">立即登录</button>
 										</div>
 										<div className="loginT" style={{display:this.state.disFlag?'block':'none'}}>
-											欢迎最贵的：<p>{this.state.username}</p>登录纸飞机！
+											欢迎最贵的：<p>{this.state.usernameL}</p>登录纸飞机！
 										</div>
 									</div>
 								</div>
