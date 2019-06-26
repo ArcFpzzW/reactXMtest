@@ -6,9 +6,23 @@ class Car extends Component {
 	render(){
 			console.log(this.props)
 			return <div><ul>
-					  {
+					  
+						{
+							this.props.list.map((item,index)=>{
+								return <li key={index} >
+									<div className="second_li_box">
+										<h1>{item.title}</h1>
+										<p>{item.text}</p>
+										<span>{item.ct}</span>
 
-					  }
+										<i className="fa fa-star-o"></i>
+										<button> 取消收藏</button>
+									</div>
+
+								</li>
+							})
+						}
+					  
 				   </ul>
 					
 					   <Footer />
@@ -35,13 +49,6 @@ var mapState=(state)=>{
 }
 var mapDispatch=(dispatch)=>{
 return {
-	inc(id){
-		
-		dispatch(actions.incAction(id));
-	},
-	dec(id){
-		dispatch(actions.decAction(id));
-	},
 	change(id){
 		dispatch(actions.changeAction(id));
 	}
