@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 // import {connect} from 'react-redux';
 // import actions from './actionCreator'
 import Footer from '../common/footer'
+// import {BrowserRouter as Router,Route,Redirect,Switch } from 'react-router-dom'
 import './user.css'
 
 
@@ -80,6 +81,7 @@ import './user.css'
 
 
 								</div>
+								
 							</div>	
 						<Footer />
 					   </div>

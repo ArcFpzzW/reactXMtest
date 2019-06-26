@@ -13,14 +13,11 @@ export default class Luck extends Component{
     goUser(){
         this.props.history.push("/user")
     }
-
-
     render(){
         return <div>
            
             <div>
             <button onClick={this.goUser.bind(this)}>返回</button>
-
             </div>
             <div className="luck_Box">
                 <div className="star_Box" onClick={this.goStarts.bind(this)}>
@@ -34,7 +31,7 @@ export default class Luck extends Component{
             </div>
                 <Route path="/luck/starts" component={Starts} />
                 <Route path="/luck/lucks" component={Lucks} />
-                {/* <Redirect from="/luck" to="/luck/starts" exact /> */}
+                <Redirect from="/luck" to="/luck/starts" exact />
         </div>
     }
 }
