@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import Footer from '../common/footer'
+import actions from '../third/actionCreator'
 import {connect} from 'react-redux';
 import actionlist from './actionCreator'
 import './second.css'
@@ -18,9 +19,11 @@ import './second.css'
                                 		     <div className="second_li_box">
                                                  <h1>{item.title}</h1>
                                                  <p>{item.text}</p>
-                                                 <span>{item.ct}</span>
-                                                 <b>收藏</b>
+                                                 <div className="li_btm">
+																								 <span>{item.ct}</span>
+                                                 <button onClick={this.props.add.bind(this,{...item,count:1,flag:false})}>收藏</button>
                                                  <i className="fa fa-star-o"></i>
+																								 </div>
                                 		     </div>
 
                                 		</li>
@@ -42,7 +45,10 @@ var mapState=(state)=>{
 }
 var mapDispatch=(dispatch)=>{
 	return {
-	
+		add(obj){
+			console.log(obj)
+			dispatch(actions.addAction(obj));
+		},
 		getData(){
 			dispatch(actionlist.getDataAction())
 		}

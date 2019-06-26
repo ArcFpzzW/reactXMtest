@@ -44,8 +44,7 @@ import './user.css'
 										<li className="con_Li">
 											<img src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561522659121&di=d52545a9181f065e90cf2b031e830f23&imgtype=0&src=http%3A%2F%2Fimages.669pic.com%2Felement_pic%2F95%2F66%2F62%2F97%2Fd8f0c8a2eb94d6402b0121e37607f081.jpg' alt=""  />
 											 <span onClick={this.goThird.bind(this)}>joker收藏</span>
-											<img src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561522659121&di=d52545a9181f065e90cf2b031e830f23&imgtype=0&src=http%3A%2F%2Fimages.669pic.com%2Felement_pic%2F95%2F66%2F62%2F97%2Fd8f0c8a2eb94d6402b0121e37607f081.jpg' alt="" />
-											 <span>joker收藏</span>
+											
 											 <i> </i>
 										</li>
 										<li>

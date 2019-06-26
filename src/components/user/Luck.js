@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import axios from "axios"
+
 import {Route,Redirect} from "react-router-dom"
 import Starts from './fortune/startS'
 import Lucks from './fortune/luckS'
@@ -10,14 +10,16 @@ export default class Luck extends Component{
     goLucks(){
         this.props.history.push("/luck/lucks")
     }
-
+    goUser(){
+        this.props.history.push("/user")
+    }
 
 
     render(){
         return <div>
            
             <div>
-            <button onClick={this.props.history.go.bind(this,-1)}>返回</button>
+            <button onClick={this.goUser.bind(this)}>返回</button>
 
             </div>
             <div className="luck_Box">
