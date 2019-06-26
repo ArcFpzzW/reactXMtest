@@ -16,7 +16,7 @@ class Car extends Component {
 		
 	}
 	getCollection(){
-		console.log(this.state.coleFlag)
+		// console.log(this.state.coleFlag)
 		if(sessionStorage.getItem("user")){
 			this.setState({
 				coleFlag:!this.state.coleFlag
