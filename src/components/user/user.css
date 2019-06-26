@@ -45,3 +45,79 @@
 .tit_Wb{
     color: #fff;
 }
+/* 星座运势box布局 */
+.luck_Box{
+    width:100%;
+    height: 2rem;
+    background-color: #1e90ff;
+}
+.star_Box{
+    float: left;
+    width: 50%;
+    height: 2rem;
+    background-color: aqua;
+    text-align: center;
+    line-height: 2rem;
+
+}
+
+.alma_Box{
+    float: right;
+    width: 50%;
+    height: 2rem;
+    background-color: beige;
+    text-align: center;
+    line-height: 2rem;
+}
+/* --------用户页面功能列表区------------- */
+
+
+.list_Ul_Box{
+    background-color: aquamarine;
+    width: 100%;
+    height: 6.1rem;
+    position: fixed;
+    overflow-y: auto;
+}
+
+.list_Ul_Box li{
+    margin: auto;
+    width: 98%;
+    height: 1.5rem;
+    position: relative;
+    border: 1px solid #1e90ff;
+    margin-bottom: 0.1rem;
+    border-radius:2px; 
+}
+.list_Ul_Box li img{
+    width: 1.2rem;
+    height: 1.2rem;
+    display: inline-block;
+    border-radius:50%;
+    overflow: hidden; 
+    margin-top:0.15rem ;
+    margin-left:0.2rem; 
+}
+
+
+.list_Ul_Box li i{
+    display: inline;
+    width: 0.5rem;
+    height: 0.5rem;
+    float: right;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAkCAMAAABR74GsAAAAhFBMVEVHcEy+wMa+wcW9wMXQ0NDFxcW9wMW///+9wMW9wMW+wMW+wse+wMXBwca/wsW9wMW+wMa9wcW9wcW+wMa9wse9wMW9wcbAwMa/xsa9wMXAwMe9wMW9wcW/wca+wca9wMW9wsa+wMa9wMW9wMW9wcW/1NS+wMXHx8e/wcbCws6+wcW9wMXhD+L5AAAAK3RSTlMAgrXLCxblBPz1ZjfcNkzdnraBg2XPyk0k6iXrjXCd5HGLnLeADMwXZBVL0OsnaQAAAJJJREFUKM+t0EcSgzAMQFEDBmx6OiW9J//+98te8iqDlm80428ZM8ccslVATxDgC1AozWNwO8V2C75U/KlgGhX3A7QvxbWH50Px18EtV/wGOp19ByLN1xl+k1aw0doG1Cbga/naAlwjVztgLTEClhIL4CixcRDL65QeEitwnKBKA/VD/3/9PlRvskC9MecsMnPPD3MGEI/gd5ReAAAAAElFTkSuQmCC') ;
+    background-size: 100% 100%; 
+    background-repeat:no-repeat; 
+    position: absolute;
+    right: 0.2rem;
+    top: 0.5rem;
+}
+.list_Ul_Box li span{
+    width: 3.3rem;
+    height: 0.5rem;
+    float:right;
+    font-size: 0.4rem;
+    margin: 0.5rem 1.7rem 0.3rem 0.2rem;
+
+}
+
