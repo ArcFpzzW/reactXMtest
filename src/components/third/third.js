@@ -10,7 +10,9 @@ class Car extends Component {
 						{
 							this.props.list.map((item,index)=>{
 								return <li key={index} >
+									
 									<div className="second_li_box">
+									<input type="checkbox" defaultChecked={item.flag} onChange={this.props.change.bind(this,item.id)} />
 										<h1>{item.title}</h1>
 										<p>{item.text}</p>
 										<span>{item.ct}</span>
@@ -52,6 +54,7 @@ return {
 	change(id){
 		dispatch(actions.changeAction(id));
 	}
+
 }
 }
 export default connect(mapState,mapDispatch)(Car);
