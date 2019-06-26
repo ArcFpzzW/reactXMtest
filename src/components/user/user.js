@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import {Route} from "react-router-dom"
 import axios from 'axios'
 // import {connect} from 'react-redux';
 // import actions from './actionCreator'
@@ -6,7 +7,14 @@ import Footer from '../common/footer'
 import './user.css'
 
 
+
  export default class Car extends Component {
+		goLuck(){
+			this.props.history.push("/luck")
+		}
+		goThird(){
+			this.props.history.push("/third")
+		}
 		render(){
 			    console.log(this.props)
 				return <div>
@@ -26,17 +34,18 @@ import './user.css'
 								<div className="list_Box">
 									<div className="luck_Box">
 										<div className="star_Box">
-											<span>今日份星座运势</span>
+											<span onClick={this.goLuck.bind(this)}>今日份星座运势</span>
+										
 										</div>
 										<div className="alma_Box">
-											<span>今日份黄历运势</span>
+											<span onClick={this.goLuck.bind(this)}>今日份黄历运势</span>
 										</div>
-
+										
 									</div>
 									<ul className="list_Ul_Box">
 										<li className="con_Li">
 											<img src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561522659121&di=d52545a9181f065e90cf2b031e830f23&imgtype=0&src=http%3A%2F%2Fimages.669pic.com%2Felement_pic%2F95%2F66%2F62%2F97%2Fd8f0c8a2eb94d6402b0121e37607f081.jpg' />
-											 <span>joker收藏</span>
+											 <span onClick={this.goThird.bind(this)}>joker收藏</span>
 											 <i> </i>
 										</li>
 										<li>
