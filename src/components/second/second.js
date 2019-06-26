@@ -46,7 +46,7 @@ var mapState=(state)=>{
 var mapDispatch=(dispatch)=>{
 	return {
 		add(obj){
-			console.log(obj)
+			// console.log(obj)
 			dispatch(actions.addAction(obj));
 		},
 		getData(){

@@ -12,15 +12,12 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-         <Route path="/home" component={Home}  />
+         <Route path="/home" component={Home} />
          <Route path="/second" component={Second}  />
-         <Route path="/third" component={Third}  />
+         <Route path="/third" component={Third} />
          <Route path="/user" component={User}  />
-        
-         <Route path="/luck" component={Luck}  />
-
+         <Route path="/luck" component={Luck} />
          <Route path="/" component={Home}  exact/>
-          
          </Switch>
       </div>
     </Router>

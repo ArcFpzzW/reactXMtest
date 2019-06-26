@@ -13,14 +13,11 @@ export default class Luck extends Component{
     goUser(){
         this.props.history.push("/user")
     }
-
-
     render(){
         return <div>
            
             <div>
             <button onClick={this.goUser.bind(this)}>返回</button>
-
             </div>
             <div className="luck_Box">
                 <div className="star_Box" onClick={this.goStarts.bind(this)}>

@@ -16,7 +16,7 @@ class Car extends Component {
 		
 	}
 	getCollection(){
-		console.log(this.state.coleFlag)
+		// console.log(this.state.coleFlag)
 		if(sessionStorage.getItem("user")){
 			this.setState({
 				coleFlag:!this.state.coleFlag
@@ -42,7 +42,7 @@ class Car extends Component {
 										<span>{item.ct}</span>
 
 										<i className="fa fa-star-o"></i>
-										<button > 取消收藏</button>
+										<button onClick={this.props.remove.bind(this,item.id)}> 取消收藏</button>
 									</div>
 
 								</li>
@@ -80,6 +80,9 @@ var mapDispatch=(dispatch)=>{
 return {
 	change(id){
 		dispatch(actions.changeAction(id));
+	},
+	remove(id){
+		dispatch(actions.removeAction(id));
 	}
 
 }

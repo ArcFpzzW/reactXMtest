@@ -1,11 +1,6 @@
 import React,{Component} from 'react'
-// import {connect} from 'react-redux';
-// import actions from './actionCreator'
 import Footer from '../common/footer'
 import './user.css'
-
-
-
  export default class Car extends Component {
 	constructor(props){
 		super(props);
@@ -20,20 +15,17 @@ import './user.css'
 			this.setState({
 				disFlag:sessionStorage.getItem("disFlag")
 			})
-		}
-		
+		}	
 	}
 		goLuck(){
 			if(sessionStorage.getItem("user")){
 				this.props.history.push("/luck")
 			}
-			
 		}
 		goThird(){
 			if(sessionStorage.getItem("user")){
 				this.props.history.push("/third")
-			}
-			
+			}	
 		}
 		login(){
 			// console.log(this.props.url);
@@ -45,8 +37,7 @@ import './user.css'
 					disFlag:!this.state.disFlag,
 					usernameL:this.username.value
 				})
-				sessionStorage.setItem("disFlag",this.state.disFlag);
-				
+				sessionStorage.setItem("disFlag",this.state.disFlag);	
 			}
 	   }
 		render(){
@@ -119,6 +110,7 @@ import './user.css'
 
 
 								</div>
+								
 							</div>	
 						<Footer />
 					   </div>
