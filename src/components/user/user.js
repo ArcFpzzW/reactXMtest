@@ -13,7 +13,8 @@ import './user.css'
 	componentDidMount(){
 		if(sessionStorage.getItem("user")){
 			this.setState({
-				disFlag:sessionStorage.getItem("disFlag")
+				disFlag:sessionStorage.getItem("disFlag"),
+				usernameL:sessionStorage.getItem("user")
 			})
 		}	
 	}
@@ -55,7 +56,7 @@ import './user.css'
 											<button onClick={this.login}  className="login_Btn">立即登录</button>
 										</div>
 										<div className="loginT" style={{display:this.state.disFlag?'block':'none'}}>
-											欢迎最贵的：<p>{this.state.usernameL}</p>登录纸飞机！
+											欢迎尊贵的：<p>{this.state.usernameL}</p>登录纸飞机！
 										</div>
 									</div>
 								</div>
