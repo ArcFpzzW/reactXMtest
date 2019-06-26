@@ -26,7 +26,7 @@ export default class Starts extends Component{
             strDate = "0" + strDate;
         }
         var currentdate = year + seperator1 + month + seperator1 + strDate;
-        
+        console.log("当前时间戳")
         this.setState({
             newDate:currentdate
 

@@ -55,7 +55,7 @@ return {
 		dispatch(actions.changeAction(id));
 	},
 	remove(id){
-		dispatch(actions.decAction(id));
+		dispatch(actions.removeAction(id));
 	}
 
 }

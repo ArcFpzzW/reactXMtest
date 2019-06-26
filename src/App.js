@@ -18,8 +18,6 @@ function App() {
          <Route path="/user" component={User}  />
          <Route path="/luck" component={Luck} />
          <Route path="/" component={Home}  exact/>
-        
-        
          </Switch>
       </div>
     </Router>

@@ -5,7 +5,7 @@ var initState ={
 
 const reducer = (state=initState,action)=>{
 	let newState ={...state};
-	console.log(newState)
+	// console.log(newState)
    
     if(action.type==="ADD"){
     	if(newState.joke_list.length===0){
@@ -29,7 +29,11 @@ const reducer = (state=initState,action)=>{
     			item.flag=!item.flag;
     		}
     	})
-    }
+	}
+	else if(action.type ==="REMOVE"){
+		// console.log(id)
+		// newState.joke_list.splice(id,1)
+	}
 	localStorage.joke_list=JSON.stringify(newState);
 	return newState;
 }
