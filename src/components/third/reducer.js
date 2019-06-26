@@ -33,9 +33,9 @@ const reducer = (state=initState,action)=>{
 	else if(action.type ==="REMOVE"){
 		console.log(action.id)
 		// newState.joke_list.splice(index,1)
-		newState.joke_list.filter((item)=>{
-			console.log(newState)
-    		return item.id!==action.id
+		newState.joke_list.forEach((item)=>{
+			
+    		
     	})
 	}
 
