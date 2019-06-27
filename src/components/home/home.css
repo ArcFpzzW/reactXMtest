@@ -59,9 +59,12 @@
 }
 .home_list_ul_li_right a{
    display:inline-block;
-   width:0.5rem;
-   height:0.5rem;
-  
+   width:0.8rem;
+   height:0.3rem;
+   color: #ff5f16;
+   border: 1px solid #ff5f16;
+   border-radius: 10%;
+   text-align: center;
 }
 .home_kong{
     height:0.5rem;

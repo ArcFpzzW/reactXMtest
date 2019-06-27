@@ -19,8 +19,8 @@ import './home.css'
 										 return <li key={index} className="home_list_ul_li">
 											 	<div className="home_list_ul_li_left">
 													 <img  src={item.thumbnail_pic_s}  alt="" />
-												 </div>
-												 <div  className="home_list_ul_li_middle">
+												</div>
+												<div  className="home_list_ul_li_middle">
                                     <h2>{item.author_name}</h2>
                                     <h3> {item.category} </h3>
                                     <h4>{item.title}&nbsp;
@@ -31,7 +31,7 @@ import './home.css'
                                     </h5>
                                 </div>
                                 <div  className="home_list_ul_li_right">
-																		<a href={item.url}>详情</a>
+													<a href={item.url}>详情</a>
                                 </div>
 										 </li>
 									 })

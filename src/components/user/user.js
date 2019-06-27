@@ -46,8 +46,10 @@ import './user.css'
 				return <div>
 						<div className="user_Box">
 								<div className="text_Box">
-									<h3 className="tit_Wb">[放飞梦想]</h3>
-									<p className="tit_Wb">很难说什么事办不到的事情，因为昨天的梦想可以使今天的希望，并且还可以成为明天的现实。</p>
+									<div className="tit_Wb_box">
+										<h3 className="tit_Wb">[放飞梦想]</h3>
+										<p className="tit_Wb">很难说什么事办不到的事情，因为昨天的梦想可以是今天的希望，并且还可以成为明天的现实。</p>
+									</div>
 									<div>
 										<span className="Hp_Box"><img className="Nl_img" src='http://pic.51yuansu.com/pic3/cover/00/94/68/58dcd704b0803_610.jpg' alt="" /></span>
 										<div className="login_Box"  style={{display:this.state.disFlag?'none':'block'}}>

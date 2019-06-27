@@ -20,9 +20,11 @@ import './second.css'
                                                  <h1>{item.title}</h1>
                                                  <p>{item.text}</p>
                                                  <div className="li_btm">
-																								 <span>{item.ct}</span>
-                                                 <button onClick={this.props.add.bind(this,{...item,count:1,flag:false})}>收藏</button>
-                                                 <i className="fa fa-star-o"></i>
+													<span>{item.ct}</span>
+													<span onClick={this.props.add.bind(this,{...item,count:1,flag:false})}>收藏
+													<i className="fa fa-star-o"></i>  {/*收藏星星有了填充色！！ */}
+													</span>
+                                                 
 																								 </div>
                                 		     </div>
 

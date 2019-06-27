@@ -1,0 +1,23 @@
+.third_li_box{
+    height: 2.7rem;
+    width: 100%;
+    border-bottom:1px solid #ff5f16;
+    margin-bottom: 0.2rem;
+    color: #797d82
+}
+
+.third_title{
+    font-size: 16px;
+    color: #ff5f16;
+}
+.third_btn{
+    display: block;
+
+}
+.third_x{
+    margin-left: 2.5rem;
+    color: #ff5f16;
+}
+.fa-trash-o{
+    padding-left: 0.07rem;
+}

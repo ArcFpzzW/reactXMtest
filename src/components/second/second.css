@@ -1,14 +1,14 @@
 .second_li_box{
-   height: 2.5rem;
+   height: 2.7rem;
    width: 100%;
-   box-sizing :border-box;
-   border:1px solid rgb(252, 213, 87);
+   border-bottom:1px solid #ff5f16;
    margin-bottom: 0.2rem;
    color: #797d82
 }
-.second_li_box h1{
+.second_li_box  h1{
    font-size: 16px;
    padding-bottom: 0.1rem;
+   padding-top: 0.5rem;
 }
 .second_li_box p{
    width: 100%;
@@ -24,4 +24,28 @@
 .second_li_box span{
    font-size: 12px;
    padding: 0.2rem
+}
+.li_btm span:nth-child(1){
+   padding-right: 3.08rem;
+}
+.li_btm span:nth-child(2){
+   display:inline-block;
+   width:0.8rem;
+   height:0.1rem;
+   color: #ff5f16;
+   border: 1px solid #ff5f16;
+   border-radius: 10%;
+   text-align: center;
+   line-height: 0.1rem;
+   margin-top:0.05rem;
+   display: flex;  
+   position: relative; 
+ 
+}
+.li_btm .fa-star-o{
+  display: inline-block;
+  margin-bottom: 0.2rem;
+  position: absolute;
+  top:0.15rem;
+  left: 0.8rem;
 }

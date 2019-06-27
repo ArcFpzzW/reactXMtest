@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 import Footer from '../common/footer'
 import {connect} from 'react-redux';
 import actions from './actionCreator'
+import './third.css'
 class Car extends Component {
 	constructor(props){
 		super(props);
@@ -28,7 +29,7 @@ class Car extends Component {
 			// console.log(this.props)
 		
 			return <div>
-				<h3>您的收藏列表</h3>
+				<div className="third_title">您的收藏列表></div>
 
 				<ul style={{display:this.state.coleFlag?'none':'block'}}>					  
 						{
@@ -36,13 +37,14 @@ class Car extends Component {
 								return <li key={index} >
 									
 									<div className="second_li_box">
-									<input type="checkbox" defaultChecked={item.flag} onChange={this.props.change.bind(this,item.id)} />
+									{/* <input type="checkbox" defaultChecked={item.flag} onChange={this.props.change.bind(this,item.id)} /> */}
 										<h1>{item.title}</h1>
 										<p>{item.text}</p>
 										<span>{item.ct}</span>
-
-										<i className="fa fa-star-o"></i>
-										<button onClick={this.props.remove.bind(this,item.id)}> 取消收藏</button>
+										<span onClick={this.props.remove.bind(this,item.id)} className="third_x"> 取消收藏 
+										<i className="fa fa-trash-o" aria-hidden="true"></i>
+										</span>
+										
 									</div>
 
 								</li>
