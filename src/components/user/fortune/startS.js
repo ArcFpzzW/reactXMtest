@@ -49,16 +49,16 @@ export default class Starts extends Component{
         let {starlist} = this.state
         return <div className="starlist">
             星座运势页面
-            <p>今日日期：{this.state.newDate}</p>
+            <p className="starlist_p">今日日期：{this.state.newDate}</p>
             <hr />
-            <p>{starlist.grxz}</p>
-            <p>{starlist.lucky_color}</p>
-            <p>{starlist.day_notice}</p>
-            <p>{starlist.love_txt}</p>
-            <p>{starlist.work_txt}</p>
+            <p className="starlist_p">{starlist.grxz}</p>
+            <p className="starlist_p">{starlist.lucky_color}</p>
+            <p className="starlist_p">{starlist.day_notice}</p>
+            <p className="starlist_p">{starlist.love_txt}</p>
+            <p className="starlist_p">{starlist.work_txt}</p>
            
-            <p>{starlist.general_txt}</p>
-            <p>{starlist.money_txt}</p>
+            <p className="starlist_p">{starlist.general_txt}</p>
+            <p className="starlist_p">{starlist.money_txt}</p>
         </div>
     }
 }

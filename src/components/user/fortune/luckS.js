@@ -49,20 +49,20 @@ export default class Lucks extends Component{
         return <div className="lucks">
             <div >
                 黄历运势页面
-                <p>今日日期：{this.state.newDate}</p>
+                <p className="starlist_p">今日日期：{this.state.newDate}</p>
                 <hr />
-                <p>{licksList.t3}</p>
+                <p className="starlist_p">{licksList.t3}</p>
                 <hr />
                     {licksList.chongsha}
-                <h1>{licksList.gongli}</h1>
-                <h1>{licksList.ji}</h1>
-                <h1>{ licksList.jieqi24}</h1>
-                <h1>{ licksList.jieri}</h1>
-                <h1>{ licksList. jrhh}</h1>
-                <h1>{ licksList. jsyq}</h1>
-                <h1>{ licksList. nayin}</h1>
-                <h1>{ licksList. nongli}</h1>
-                <h1>{ licksList. pzbj}</h1>
+                <h1 className="starlist_h1">{licksList.gongli}</h1>
+                <h1  className="starlist_h1">{licksList.ji}</h1>
+                <h1  className="starlist_h1">{ licksList.jieqi24}</h1>
+                <h1  className="starlist_h1">{ licksList.jieri}</h1>
+                <h1  className="starlist_h1">{ licksList. jrhh}</h1>
+                <h1  className="starlist_h1">{ licksList. jsyq}</h1>
+                <h1  className="starlist_h1">{ licksList. nayin}</h1>
+                <h1  className="starlist_h1">{ licksList. nongli}</h1>
+                <h1  className="starlist_h1">{ licksList. pzbj}</h1>
 
             </div>
             
