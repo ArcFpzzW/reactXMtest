@@ -52,9 +52,16 @@ class Car extends Component {
 						}
 					  
 				   </ul>
-					<div   style={{display:this.state.coleFlag?'block':'none'}}>
-						<h2>您的收藏列表空空如也！</h2>
+					<div className="empty_Box"  style={{display:this.state.coleFlag?'block':'none'}}>
+						<div className="third_Tet">
+							<span>尊贵的用户您好！</span>
+							<p>您现在的登录模式属于游客！</p>
 
+						</div>
+						<h2 className="third_Ts">您的收藏列表空空如也！</h2>
+						<div className="img_Fj">
+							{/* <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561631144507&di=085940329fc6f29fcf62e60718432b2b&imgtype=0&src=http%3A%2F%2Fimg0.pcgames.com.cn%2Fpcgames%2F1406%2F24%2F4007462_2.gif" /> */}
+						</div>
 					</div>
 					   <Footer />
 				   </div>

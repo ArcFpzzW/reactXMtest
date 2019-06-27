@@ -6,9 +6,9 @@ import './navfooter.css'
 		render(){
 			   
 				return <div className="navFooter">
-                             <NavLink to="/home">  <span><i className="iconfont" >&#xe717;</i></span>电影</NavLink>
-                <NavLink to="/second"> <span><i className="iconfont" >&#xe61d;</i></span>影院</NavLink>
-                <NavLink to="/third"> <span><i className="iconfont" >&#xe717;</i></span>优惠</NavLink>
+                             <NavLink to="/home">  <span><i className="iconfont" >&#xe717;</i></span>首页</NavLink>
+                <NavLink to="/second"> <span><i className="iconfont" >&#xe61d;</i></span>兴趣</NavLink>
+                <NavLink to="/third"> <span><i className="iconfont" >&#xe717;</i></span>收藏</NavLink>
                 <NavLink to="/user"> <span><i className="iconfont" >&#xe605;</i></span>我的</NavLink>
 					   </div>
 
