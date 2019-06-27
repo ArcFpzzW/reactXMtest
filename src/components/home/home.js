@@ -4,9 +4,22 @@ import Footer from '../common/footer'
 import actionlist from './actionCreator'
 import Swiper from '../common/swiper'
 import './home.css'
+import pubsub from 'pubsub-js'
   class Home extends Component {
 	  componentDidMount(){
 		this.props.getData();
+	  }
+	  gohomeDetal(delUrl){
+		//   console.log(delUrl);
+		this.props.history.push("/homedetal",delUrl);
+		this.send(delUrl);
+		// console.log('go')
+		return;
+	  }
+	  send(delUrl){
+		pubsub.publish("detali",{delUrl});
+		// console.log('send')
+		return;
 	  }
 		render(){
 			    console.log(this.props.list)
@@ -31,7 +44,8 @@ import './home.css'
                                     </h5>
                                 </div>
                                 <div  className="home_list_ul_li_right">
-													<a href={item.url}>详情</a>
+													{/* <a href={item.url}>详情</a> */}
+													<span onClick={this.gohomeDetal.bind(this,item.url)} >详情</span>
                                 </div>
 										 </li>
 									 })

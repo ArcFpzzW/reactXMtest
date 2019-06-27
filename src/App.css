@@ -1,1 +1,9 @@
-
+.goBack_Btn{
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius:50%;
+    background-image: url("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2054523850,3228399673&fm=26&gp=0.jpg") ;
+    background-repeat:no-repeat;
+    background-size:100% 100%;  
+}
