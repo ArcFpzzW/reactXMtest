@@ -9,6 +9,7 @@
 .third_title{
     font-size: 16px;
     color: #ff5f16;
+    background: #83dada;
 }
 .third_btn{
     display: block;
@@ -21,3 +22,32 @@
 .fa-trash-o{
     padding-left: 0.07rem;
 }
+
+/* 未登录前的收藏页面的样式 */
+.empty_Box{
+    width: 100%;
+    height: 12.8rem;
+    background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561630016730&di=c2eacc10bc05ac52b4ae0efe3b8e89ad&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F11%2F31%2F02%2F01J58PICQ6b.jpg') ;
+    background-repeat: no-repeat;
+    background-size:102% 100% ;  
+    background-position:center;
+   
+}
+.third_Tet{
+    text-align: center;
+    font-size: 0.5rem;
+    padding-top: 0.3rem; 
+    color: #ff5f16;
+}
+.third_Ts{
+    color: #ff5f16;
+    text-align: center;
+    font-size: 0.6rem;
+    margin: 2rem auto;
+}
+.img_Fj{
+    width: 100%;
+    height: 5rem;
+    /* background:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561631461058&di=fbdbef9d963d241e1f08477d65b32846&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20161128%2Fe4d4ea69cd254c17b9b067b241bb090b.gif') */
+}
+/* ----------------------- */
