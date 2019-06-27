@@ -45,7 +45,7 @@ export default class Lucks extends Component{
     render(){
         
         let{licksList}= this.state;
-        console.log(licksList)
+        // console.log(licksList)
         return <div className="lucks">
             <div >
                 黄历运势页面

@@ -1,6 +1,6 @@
 export default {
     addAction(obj){
-        console.log(obj)
+        // console.log(obj)
         return {
             type:"ADD",
             obj

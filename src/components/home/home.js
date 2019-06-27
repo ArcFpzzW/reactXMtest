@@ -22,7 +22,7 @@ import pubsub from 'pubsub-js'
 		return;
 	  }
 		render(){
-			    console.log(this.props.list)
+			    // console.log(this.props.list)
 				return <div>
 					<Swiper />
 						<div className="news_Box">

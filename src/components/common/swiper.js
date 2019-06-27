@@ -26,7 +26,7 @@ export default class SWiper extends React.Component{
                 "X-Host": "mall.cfg.common-banner"
 			}
 		}).then((res)=>{
-            console.log(res.data.data)
+            // console.log(res.data.data)
           this.setState({
             bannerList:res.data.data
            

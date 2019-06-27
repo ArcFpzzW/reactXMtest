@@ -9,7 +9,7 @@ import './second.css'
 		this.props.getData();
 	  }
 		render(){
-			    console.log(this.props.list)
+			    // console.log(this.props.list)
 				return <div>
 				       <div className="second_x_box">
 				            <ul>
@@ -33,7 +33,7 @@ import './second.css'
                                 }
 				            </ul>
 				       </div>
-						second
+						
 						<Footer/>
 					   </div>
 

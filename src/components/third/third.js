@@ -22,7 +22,7 @@ class Car extends Component {
 			this.setState({
 				coleFlag:!this.state.coleFlag
 			})
-			console.log(this.state.coleFlag)
+			// console.log(this.state.coleFlag)
 		}
 	}
 	render(){

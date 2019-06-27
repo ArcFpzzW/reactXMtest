@@ -42,7 +42,7 @@ import './user.css'
 			}
 	   }
 		render(){
-			    console.log(this.props)
+			    // console.log(this.props)
 				return <div>
 						<div className="user_Box">
 								<div className="text_Box">

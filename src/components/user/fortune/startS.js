@@ -27,7 +27,7 @@ export default class Starts extends Component{
             strDate = "0" + strDate;
         }
         var currentdate = year + seperator1 + month + seperator1 + strDate;
-        console.log("当前时间戳")
+        // console.log("当前时间戳")
         this.setState({
             newDate:currentdate
 
@@ -40,12 +40,12 @@ export default class Starts extends Component{
                 starlist:res.data.starlist.day
 
             })
-             console.log(this.state.starlist.day)
+            //  console.log(this.state.starlist.day)
      });
     }
 
     render(){
-        console.log(this.state.starlist)
+        // console.log(this.state.starlist)
         let {starlist} = this.state
         return <div className="starlist">
             星座运势页面
