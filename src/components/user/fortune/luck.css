@@ -1,0 +1,10 @@
+.starlist,.lucks{
+    padding:0.2rem;
+    margin-top:0.2rem;
+}
+.starlist,.lucks h1,p{
+    margin-top:0.1rem;
+    font-size:14px;
+    margin:0.1rem;
+   
+}

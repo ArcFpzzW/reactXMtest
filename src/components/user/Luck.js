@@ -3,6 +3,7 @@ import React,{Component} from 'react'
 import {Route,Redirect} from "react-router-dom"
 import Starts from './fortune/startS'
 import Lucks from './fortune/luckS'
+
 export default class Luck extends Component{
     goStarts(){
         this.props.history.push("/luck/starts")

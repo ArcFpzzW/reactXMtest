@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import axios from "axios"
+import "./luck.css"
 export default class Starts extends Component{
 
     constructor(props){
@@ -36,7 +37,7 @@ export default class Starts extends Component{
         axios.get("http://154.8.228.237:3000/star").then((res)=>{
             //  console.log(res)
             this.setState({
-                starlist:res.data.starlist
+                starlist:res.data.starlist.day
 
             })
              console.log(this.state.starlist.day)
@@ -44,10 +45,20 @@ export default class Starts extends Component{
     }
 
     render(){
-        return <div>
+        console.log(this.state.starlist)
+        let {starlist} = this.state
+        return <div className="starlist">
             星座运势页面
             <p>今日日期：{this.state.newDate}</p>
-
+            <hr />
+            <p>{starlist.grxz}</p>
+            <p>{starlist.lucky_color}</p>
+            <p>{starlist.day_notice}</p>
+            <p>{starlist.love_txt}</p>
+            <p>{starlist.work_txt}</p>
+           
+            <p>{starlist.general_txt}</p>
+            <p>{starlist.money_txt}</p>
         </div>
     }
 }
