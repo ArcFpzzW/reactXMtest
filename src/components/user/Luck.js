@@ -17,8 +17,8 @@ export default class Luck extends Component{
     render(){
         return <div>
            
-            <div>
-            <button onClick={this.goUser.bind(this)}>返回</button>
+            <div className="Luck_header">
+            <button onClick={this.goUser.bind(this)}><i class="fa fa-mail-reply" aria-hidden="true"></i></button>
             </div>
             <div className="luck_Box">
                 <div className="star_Box" onClick={this.goStarts.bind(this)}>

@@ -4,6 +4,10 @@
     background-color: rgb(245, 236, 220);
     /* background:url("http://s4.sinaimg.cn/orignal/4965559cfa1ac4190d963") no-repeat; */
 }
+.Luck_header{
+    height:0.5rem;
+    background:#ccc;
+}
 .Hp_Box{
     display: block;
     width: 2rem;

@@ -63,6 +63,7 @@ class Car extends Component {
 							{/* <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561631144507&di=085940329fc6f29fcf62e60718432b2b&imgtype=0&src=http%3A%2F%2Fimg0.pcgames.com.cn%2Fpcgames%2F1406%2F24%2F4007462_2.gif" /> */}
 						</div>
 					</div>
+					<div className="third_kong"></div>
 					   <Footer />
 				   </div>
 
