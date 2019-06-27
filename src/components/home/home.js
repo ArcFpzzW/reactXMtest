@@ -25,7 +25,7 @@ import pubsub from 'pubsub-js'
 			    console.log(this.props.list)
 				return <div>
 					<Swiper />
-						<div >
+						<div className="news_Box">
 							 <ul className="home_list_ul">
 								 {
 									 this.props.list.map((item,index)=>{
